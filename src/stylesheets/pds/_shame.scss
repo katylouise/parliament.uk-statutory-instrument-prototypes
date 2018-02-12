@@ -1,0 +1,54 @@
+// Hacks and quick prototyping helpers. Clean up at somepoint.
+// http://csswizardry.com/2013/04/shame-css/
+
+a.text-white,
+a.text-white:hover,
+a.text-white:visited,
+.text-white {
+	color: $white;
+}
+
+a.text-grey,
+a.text-grey:hover,
+a.text-grey:visited,
+.text-grey {
+	color: $grey60;
+}
+
+a.text-body,
+a.text-body:hover,
+a.text-body:visited,
+.text-body {
+  color: $grey100;
+}
+
+
+.section {
+	@extend h3;
+	color: $grey60;
+	margin-bottom: -2rem;
+	font-size: 1rem;
+}
+
+a.section,
+a.section:hover,
+a.section:visited {
+	color: $grey60;
+}
+
+.two-column {
+	@include media(tablet){
+		columns: 2;
+	}
+}
+
+.three-column {
+	columns: 3;
+  // column-fill: auto;
+  // height: 100px;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+

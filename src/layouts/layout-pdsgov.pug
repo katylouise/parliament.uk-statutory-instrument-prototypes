@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  include ../../src/elements/head-pdsgov.pug
+  body
+    script.
+      document.body.className = ((document.body.className) ? document.body.className + ' has-js' : 'has-js');
+    include ../../src/components/header-pdsgov.pug
+    main
+      block content
+    include ../../src/components/footer-pdsgov.pug
+    script(src="/javascripts/overrides.js")
+    block script

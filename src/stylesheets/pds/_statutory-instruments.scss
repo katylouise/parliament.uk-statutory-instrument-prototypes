@@ -1,0 +1,288 @@
+.small-title {
+	@extend p;
+	margin-bottom: -0.75rem;
+	margin-top: 0;
+}
+
+.intro-extra {
+	margin-bottom: 1.5rem;
+}
+
+.intro-extra__content p {
+	font-size: 0.875rem;
+	margin-top: -0.5rem;
+}
+
+.si-container {
+	@extend %contain-floats;
+}
+
+.si-status__title {
+	margin-top: 0;
+}
+
+.timeline-event {
+	margin: 0;
+	padding-bottom: 3rem;
+	list-style-type: none;
+
+	h4 {
+		margin-top: 0;
+	}
+}
+
+.timeline-past,
+.timeline-future {
+	position: relative;
+}
+
+.timeline-future {
+	color: $grey75;
+}
+
+.timeline-event__date,
+.timeline-event__house,
+.timeline-event__department,
+.timeline-event__location,
+.timeline-event__status,
+.timeline-event__alert,
+.timeline-event__button,
+.event-outcome__text {
+	margin: 0 0 0.25rem;
+
+	@include media(tablet){
+		font-size: 0.875rem;
+	}
+}
+
+.timeline-extra__title,
+.timeline-extra__content p {
+	margin: 0 0 0.25rem;
+	font-size: 0.875rem;
+}
+
+.timeline-extra, .intro-extra__title {
+	.collapsible-switch {
+		font-weight: normal;
+	}
+}
+
+.intro-extra__title {
+	font-size: 0.875rem;
+	margin-top: -0.5rem;
+	.collapsible-switch {
+		margin-top: -0.5rem;
+	}
+}
+
+.timeline-event__status {
+	margin-top: 1rem;
+}
+
+.timeline-event__button {
+	margin-top: 0.5rem;
+}
+
+.timeline-extra {
+	margin-top: 1rem;
+}
+
+.timeline-extra__content {
+	margin-top: 0.5rem;
+}
+
+.timeline {
+	// @extend %outdent-to-full-width;
+	position: relative;
+	padding: 2rem 3rem 2rem;
+	margin-top: 1.75rem;
+	background-color: $grey05;
+}
+
+.timeline__title {
+	font-size: 1.5rem;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+.future-events__title {
+	font-size: 1.25rem;
+	color: $grey100;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+.timeline-event__title {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.timeline-event::before {
+	content: "";
+	background: url("/images/pdsgov/timeline-past.svg");
+	height: 1.125rem;
+	width: 1.125rem;
+	position: absolute;
+	left: -2rem;
+	margin-top: 2px;
+	z-index: 99;
+}
+
+.timeline-event--future::before {
+	background: url("/images/pdsgov/timeline-future.svg");
+}
+
+.timeline-past::before,
+.timeline-future::before, {
+	content: "";
+	background: url("/images/pdsgov/timeline-line.svg");
+	height: calc(100% + 50px);
+	width: 2px;
+	position: absolute;
+	left: -1.5rem;
+	top: 15px;
+}
+
+.timeline-future::before {
+	top: -50px;
+}
+
+
+.timeline-event__date {
+	margin-bottom: 5px;
+}
+
+.timeline-event__alert {
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+	margin-top: 0.5rem;
+	padding: 10px 30px;
+	background-color: $yellow-light;
+}
+
+.timeline-group {
+	margin-top: 1rem;
+	padding: 0.5rem 0;
+	border-top: 1px solid $grey20;
+	border-bottom: 1px solid $grey20;
+}
+
+.event-outcome {
+	border: 2px solid $grey60;
+	padding: 1rem;
+	margin: 0 -1.5rem;
+	background-color: $white;
+	position: relative;
+	margin-top: 60px;
+
+	h1 {
+		font-size: 2rem;
+		margin-top: 0;
+	}
+}
+
+.event-outcome__houses {
+	list-style-type: none;
+	color: $grey60;
+	margin-bottom: 1rem;
+
+	@include media(tablet){
+		font-size: 0.875rem;
+	}
+}
+
+.event-outcome__status {
+	font-size: 1.25rem;
+	margin-top: 0;
+}
+
+
+.event-outcome__house {
+	margin-left: 1.5rem;
+}
+
+.event-outcome__house::before {
+	content: "";
+	background-color: $grey20;
+	border-radius: 24px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 1rem;
+	margin-top: 2px;
+
+	@include media(tablet){
+		margin-top: 5px;
+	}
+}
+
+.event-outcome::before {
+	content: "";
+	background: url("/images/pdsgov/timeline-baseline.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 80px;
+	width: 142px;
+	top: -80px;
+	left: -2px;
+}
+
+.subscribe-button {
+	color: $white;
+	background-color: $blue-bright;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+.associated-links {
+	margin-top: 2rem;
+}
+
+@include media(55em){
+
+	.si-details {
+		float: left;
+		padding-right: 2rem;
+		width: calc(100% - 400px);
+	}
+
+	.timeline {
+		width: 100%;
+		padding-left: 3rem;
+		padding-right: 2rem;
+	}
+
+	.timeline--si {
+		float: right;
+		max-width: 400px;
+	}
+
+	.timeline-past::before,
+	.timeline-future::before {
+		left: -1.5rem;
+	}
+
+	.timeline-event::before {
+		left: -2rem;
+	}
+
+	.event-outcome {
+		margin-left: -1.5rem;
+		margin-right: 0;
+	}
+
+	.associated-links {
+		margin-top: 0;
+		float: left;
+		width: calc(100% - 400px);
+	}
+}
+
+.js-collapsible__title {
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: $blue;
+  }
+}

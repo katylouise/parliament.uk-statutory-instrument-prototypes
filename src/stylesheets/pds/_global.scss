@@ -1,0 +1,175 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.grid-row {
+	@extend %grid-row;
+}
+
+
+html {
+	color: $grey100;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+	color: $blue;
+}
+
+a:visited {
+	color: $purple;
+}
+
+a:hover, a:focus {
+	color: $blue-darker;
+}
+
+.headline-short {
+	max-width: 700px;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.5rem 1rem;	
+	background-color: $blue;
+	color: $white;
+	cursor: pointer;
+	border: none;
+	text-align: center;
+}
+
+.button:hover, 
+.button:focus {
+	background-color: $blue-darker;
+	color: $white;
+}
+
+.button:visited {
+	color: $white;
+}
+
+.button--small {
+	font-size: 0.875rem;
+}
+
+.spinner {
+	display: block;
+    margin: 2rem auto;
+}
+
+.tabs {
+	border-bottom: 1px solid $grey20;
+	padding-bottom: calc(0.75rem - 2px);
+	// padding-left: 1rem;
+	margin: 0 0 2rem 0;
+}
+
+.tab {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	// font-size: 1.125rem;
+}
+
+.tab__button {
+	background-color: $blue;
+	padding: 0.75rem 1.5rem;
+	border-bottom: 2px solid $white;
+	color: $white;
+}
+
+.tab__button:hover,
+.tab__button:active,
+.tab__button:focus {
+	background-color: $blue-darker;
+}
+
+.tab__button:visited {
+	color: $white;
+}
+
+.tab__button--active {
+	background-color: $white;
+	border: 1px solid $grey20;
+	border-bottom: 2px solid $white;
+}
+.tab__button--active:hover,
+.tab__button--active:active,
+.tab__button--active:visited,
+.tab__button--active {
+	color: $black;
+	text-decoration: none;
+	background-color: $white;
+}
+
+.groups {
+	border-left: 5px solid $grey20;
+	padding-left: 2rem;
+}
+
+.groups-role__title {
+	width: 130px;
+	float: left;
+}
+
+.groups-role__members {
+	margin-top: 0;
+	overflow: hidden;
+}
+
+.groups-members {
+	@extend %contain-floats;
+}
+
+.definition-link {
+	background: url("/assets/link-help.svg") no-repeat;
+	width: 15px;
+	height: 0;
+	padding: 15px 0 0 0;
+	margin: 0 0 0 3px; 
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.collapsible-switch::before {
+    content: "";
+    background: url("/assets/link-help--black.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    @include media(tablet){
+      width: 0.875rem;
+      height: 0.875rem;
+  }
+}
+
+.callout {
+	padding: 0.5rem 1rem 0 1rem;
+	margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
+	background-color: $grey05;
+	border: 2px solid $grey20;
+}
+
+.callout__title {
+	margin-top: 0;
+}
+
+
