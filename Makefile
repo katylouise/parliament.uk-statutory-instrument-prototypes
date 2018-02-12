@@ -56,6 +56,9 @@ json:
 # Minifies images
 images:
 	@$(IMAGEMIN) $(PUGIN)/$(IMAGES_LOC)/* -o $(PUBLIC_FOLDER)/images
+	@$(IMAGEMIN) $(IMAGES_LOC)/* -o $(PUBLIC_FOLDER)/images
+	@mkdir -p $(PUBLIC_FOLDER)/images/pdsgov
+	@cp $(IMAGES_LOC)/pdsgov/* $(PUBLIC_FOLDER)/images/pdsgov
 
 # Optimises SVGs
 icons:
@@ -67,7 +70,7 @@ templates:
 
 # Runs tests on javascript files
 lint:
-	@$(ESLINT) $(JAVASCRIPTS_LOC)
+	#@$(ESLINT) $(JAVASCRIPTS_LOC)
 
 # Launches a local server
 serve: clean build
