@@ -43,7 +43,7 @@ a:hover, a:focus {
 
 .button {
 	display: inline-block;
-	padding: 0.5rem 1rem;	
+	padding: 0.5rem 1rem;
 	background-color: $blue;
 	color: $white;
 	cursor: pointer;
@@ -51,7 +51,7 @@ a:hover, a:focus {
 	text-align: center;
 }
 
-.button:hover, 
+.button:hover,
 .button:focus {
 	background-color: $blue-darker;
 	color: $white;
@@ -135,24 +135,24 @@ a:hover, a:focus {
 }
 
 .definition-link {
-	background: url("/assets/link-help.svg") no-repeat;
+	background: url("/images/pdsgov/link-help.svg") no-repeat;
 	width: 15px;
 	height: 0;
 	padding: 15px 0 0 0;
-	margin: 0 0 0 3px; 
+	margin: 0 0 0 3px;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
 }
 
-.collapsible-switch::before {
+.js-collapsible__title::after {
     content: "";
-    background: url("/assets/link-help--black.svg");
+    background: url("/images/pdsgov/link-help--black.svg");
     background-repeat: no-repeat;
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    margin-right: 0.5rem;
+    margin-left: 0.35rem;
     vertical-align: middle;
     @include media(tablet){
       width: 0.875rem;
@@ -171,5 +171,3 @@ a:hover, a:focus {
 .callout__title {
 	margin-top: 0;
 }
-
-
