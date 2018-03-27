@@ -1,10 +1,9 @@
 function pdsGovSiToggle() {
 
   // Local variables
-  var
-    dropdown_toggle = document.getElementsByClassName('js-collapsible__title'),
-    dropdown_parent,
-    toggle = function(e) {
+  var dropdown_toggle = document.getElementsByClassName('js-collapsible__title');
+  var dropdown_parent;
+  var toggle = function(e) {
       e.preventDefault();
 
       // Get parent of dropdown
