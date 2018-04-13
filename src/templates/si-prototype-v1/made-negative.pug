@@ -1,0 +1,56 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 [Work Package Name]
+      p.hint.theme--white
+        | In progress
+
+      .status--highlight
+        p Praying Days [Clock Starts] [Clock Ends]
+        p Coming Into Force Date [Coming Into Force] ?? [Made]
+
+  section
+    .container
+      h2 About
+      p This is a [Procedure] originating from [Government Department]. To read the full document visit [explanatoryMemorandumURL].
+
+  section
+    .container
+      h2 Completed stages
+      .track--alternative
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [Fatal EDM]
+              p #[+link('#', '[Link to EDM]')]
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [EVEL Certified]
+              p Certified / Not Certified
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [SLSC cleared] or [SLSC reported]
+              p #[+link('#', '[Link to SLSC report]')]
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [JCSI cleared] or [JCSI reported]
+              p #[+link('#', '[Link to JCSI report]')]
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [Laid in Commons] & [Laid in Lords] by [Government Department]
+
+  section
+    .container
+      h2 Possible upcoming stages
+      p Explanatory content on how a negative statutory instrument works and a general possibilities in both Commons and Lords.

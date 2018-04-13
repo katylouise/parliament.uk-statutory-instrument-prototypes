@@ -1,0 +1,57 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 [Work Package Name]
+      p.hint.theme--white
+        | In progress
+
+  section
+    .container
+      h2 About
+      p This is a [Procedure] originating from [Government Department]. To read the full document visit [explanatoryMemorandumURL].
+
+  section
+    .container
+      h2 Completed stages
+      .track--alternative
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [JCSI cleared] or [JCSI reported]
+              p #[+link('#', '[Link to JCSI report]')]
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [Laid in Commons] & [Laid in Lords] by [Government Department]
+
+  section
+    .container
+      h2 Possible upcoming stages
+      p Explanatory content on how an affirmative statutory instrument works and a general possibilities in both Commons and Lords.
+
+      ol.list--block
+        li
+          .list--details
+            p Considered by SLSC [SLSC Consideration]
+        li
+          .list--details
+            p EVEL Consideration [EVEL Consideration]
+        li
+          .list--details
+            p Commons Debate [Commons Chamber Debate] OR [DLC Debate]
+        li
+          .list--details
+            p Commons Decision [Commons Approval Motion Decision]
+        li
+          .list--details
+            p Lords Debate [Lords Chamber Debate] OR [Grand Committee Debate]
+        li
+          .list--details
+            p Lords Decision [Approval Motion Decision]
+        li
+          .list--details
+            p Commons Approval & Lords Approval [Bicameral Approval]
