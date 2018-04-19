@@ -1,10 +1,10 @@
 extends ../../layouts/layout-beta.pug
 
 block content
-  #content.section--primary
+  .section--primary
     .container
-      h1 [Procedure]
-      p This is a list of all [Procedure] currently laid before Parliament
+      h1 Made affirmative statutory instruments
+      p Current draft affirmative statutory instruments laid before Parliament.
       p A to Z - select a letter
 
       //- Letter Navigation
@@ -17,26 +17,31 @@ block content
               else
                 a(data-atoz-see='true', href='#')= val
 
-  section
+  section(tabindex=0)#content
     .container
       ol.list--block
         li
           .list--details
-            h2 #[+link('affirmative.html', '[Work Package]')]
-            p [Date] [Laid in Commons] [Laid in Lords]
+            h2 #[+link('affirmative.html', 'EU Withdrawal Bill Statutory Instrument 1')]
+            p Laid before the House of Commons and House of Lords on 18 Apr 2018
+            p Department for Exiting the European Union
         li
           .list--details
-            h2 #[+link('affirmative.html', '[Work Package]')]
-            p [Date] [Laid in Commons] [Laid in Lords]
+            h2 #[+link('#', 'The Cash Ratio Deposits (Value Bands and Ratios) Order 2018')]
+            p Laid before the House of Commons and House of Lords on 16 April 2018
+            p HM Treasury
         li
           .list--details
-            h2 #[+link('affirmative.html', '[Work Package]')]
-            p [Date] [Laid in Commons] [Laid in Lords]
+            h2 #[+link('#', 'The Package Travel and Linked Travel Arrangements Regulations 2018')]
+            p Laid before the House of Commons and House of Lords on 16 April 2018
+            p Department for Business, Energy and Industrial Strategy
         li
           .list--details
-            h2 #[+link('affirmative.html', '[Work Package]')]
-            p [Date] [Laid in Commons] [Laid in Lords]
+            h2 #[+link('#', 'The Licensing Act 2003 (Royal Wedding Licensing Hours) Order 2018')]
+            p Laid before the House of Commons and House of Lords on 21 March 2018
+            p Department for Exiting the European Union
         li
           .list--details
-            h2 #[+link('affirmative.html', '[Work Package]')]
-            p [Date] [Laid in Commons] [Laid in Lords]
+            h2 #[+link('#', 'The Double Taxation Relief (Base Erosion and Profit Shifting) Order 2018')]
+            p Laid before the House of Commons on 28 March 2018
+            p HM Revenue and Customs
