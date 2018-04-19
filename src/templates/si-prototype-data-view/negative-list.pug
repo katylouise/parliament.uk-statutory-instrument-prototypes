@@ -1,0 +1,47 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  .section--primary
+    .container
+      h1 [Procedure] [Statutory Instrument]
+      p This is a list of all current [Procedure] [Statutory Instrument] laid before Parliament
+      p A to Z - select a letter
+
+      //- Letter Navigation
+      nav(class='navigation--letter', aria-label='Paged navigation')
+        ol
+          each val, index in ['all', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+            li(data-letter=val, class= (index === 0 ? "active" : undefined))
+              if index === 0
+                span(data-atoz-see='true')= val
+              else
+                a(data-atoz-see='true', href='#')= val
+
+  section(tabindex=0)#content
+    .container
+      ol.list--block
+        li
+          .list--details
+            h2 #[+link('negative.html', '[Work Package]')]
+            p [Date] [Laying into Commons] [Laying into Lords]
+            p [Concept] || [Government Department] || [Parent Act]
+        li
+          .list--details
+            h2 #[+link('negative.html', '[Work Package]')]
+            p [Date] [Laying into Commons] [Laying into Lords]
+            p [Concept] || [Government Department] || [Parent Act]
+        li
+          .list--details
+            h2 #[+link('negative.html', '[Work Package]')]
+            p [Date] [Laying into Commons] [Laying into Lords]
+            p [Concept] || [Government Department] || [Parent Act]
+        li
+          .list--details
+            h2 #[+link('negative.html', '[Work Package]')]
+            p [Date] [Laying into Commons] [Laying into Lords]
+            p [Concept] || [Government Department] || [Parent Act]
+        li
+          .list--details
+            h2 #[+link('negative.html', '[Work Package]')]
+            p [Date] [Laying into Commons] [Laying into Lords]
+            p [Concept] || [Government Department] || [Parent Act]

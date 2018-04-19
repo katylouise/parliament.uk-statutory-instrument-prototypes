@@ -1,0 +1,62 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      p.hint.theme--white #[+link('affirmative-list.html', 'In progress (current)')]
+      h1 [Work Package Name]
+
+  section
+    .container
+      h2 About the [Statutory Instrument]
+      p This is a [Procedure] [Statutory Instrument] originating from [Government Department]. To read the full document visit [explanatoryMemorandumURL].
+
+  section
+    .container
+      h2 Completed steps
+      .track--alternative
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [JCSI Cleared] or [JCSI Reported]
+              p #[+link('#', '[Link to JCSI report]')]
+        h3 [Date]
+        ul.list--block
+          li
+            .list--details
+              p [Laying into Commons] & [Laying into Lords] by [Government Department]
+
+  section
+    .container
+      .block--border__bottom
+        h2 Possible upcoming steps
+        p Explanatory content on how the [Procedure] procedure works and a general outline of possibilities in both Commons and Lords.
+
+        ol.list--block
+          li.v1-accent--list
+            .list--details
+              p Considered by SLSC [SLSC Consideration]
+          li.v1-accent--list
+            .list--details
+              p EVEL Consideration [EVEL Consideration]
+          li.v1-accent--list
+            .list--details
+              p Commons Debate [Commons Chamber Debate] OR [DLC Debate]
+          li.v1-accent--list
+            .list--details
+              p Commons Decision [Commons Approval Motion Decision]
+          li.v1-accent--list
+            .list--details
+              p Lords Debate [Lords Chamber Debate] OR [Grand Committee Debate]
+          li.v1-accent--list
+            .list--details
+              p Lords Decision [Approval Motion Decision]
+          li.v1-accent--list
+            .list--details
+              p Commons Approval & Lords Approval [Bicameral Approval]
+
+  section
+    .container
+      h2.sr-only Parliamentary session
+      p [Parliament Session]
