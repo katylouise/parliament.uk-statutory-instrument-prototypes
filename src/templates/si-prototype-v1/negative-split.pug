@@ -3,7 +3,7 @@ extends ../../layouts/layout-beta.pug
 block content
   #content.section--primary
     .container
-      p.hint.theme--white #[+link('current-list.html', 'In progress')]
+      span.hint.theme--white.v1-status In progress
       h1 Seal Products (Amendments) (EU Exit) Regulations 2018
       p Number 2018/568
 
@@ -58,7 +58,7 @@ block content
               p
                 span.hint House of Commons
                 span.hint House of Lords
-              p Laid before the Commons and Lords
+              p Laid before the House of Commons and House of Lords
         h3 7 April 2018
         ul.list--block
           li
@@ -78,9 +78,9 @@ block content
 
   section
     .container
-      h2 Upcoming stages
+      h2 Possible upcoming stages
       p The process an SI follows depends on the outcome of certain stages, so upcoming stages may change.
-      +dropdownToggle('View upcoming stages')
+      +dropdownToggle('View possible upcoming stages')
         ul.list--block
           li.v1-accent--list
             .list--details

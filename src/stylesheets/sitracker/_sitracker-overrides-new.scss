@@ -1,13 +1,17 @@
 .v1-accent--list {
-  border-left: solid 4px $mint;
+  border-left: solid 4px $grey-3;
 }
 
-.track {
-  margin-left: $base-spacing-unit;
+.v1-status {
+  margin-bottom: $base-spacing-unit-small;
 }
 
 .hint {
   text-transform: none;
+}
+
+.track {
+  margin-left: $base-spacing-unit;
 }
 
 .dropdown__content {
