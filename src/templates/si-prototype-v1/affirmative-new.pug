@@ -1,0 +1,83 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Exotic Disease in Animals (Amendment) (England) (EU Exit) Regulations 2018
+
+  section
+    .container
+      h2 About the statutory instrument
+      ul
+        li This is a draft #[+link('https://www.parliament.uk/site-information/glossary/affirmative-procedure/', 'affirmative statutory instrument (SI)')]
+        li Laid by the #[+link('#', 'Department for Environment, Food and Rural Affairs')]
+        li To read the SI, its purpose and related information, visit the #[+link('http://www.legislation.gov.uk/uksi/2018/506/introduction/made', 'legislation.gov.uk website')]
+
+  section
+    .container
+      h2 Latest updates
+      ul.list--block
+        li
+          .list--details
+            p
+              span.hint House of Commons
+            p #[+link('#updateLords', 'No concerns raised by the Secondary Legislation Scrutiny Committee (SLSC)')]
+        li
+          .list--details
+            p
+              span.hint House of Commons
+              span.hint House of Lords
+            p #[+link('#updateCommons', 'No concerns raised by the Joint Committee on Statutory Instruments (JCSI)')]
+
+  section
+    .container
+      h2 Completed stages
+      .track--alternative
+        h3 6 April 2018
+        ul.list--block
+          li
+            .list--details
+              p
+                span.hint House of Commons
+              p The European Statutory Instruments Committee (ESIC) recommended changing the proposed SI from negative to affirmative procedure.
+              p #[+link('https://publications.parliament.uk/pa/cm201719/cmselect/cmeuleg/301-xxi/30102.htm', 'Read the ESIC report')]
+        h3 7 April 2018
+        ul.list--block
+          li
+            .list--details
+              p
+                span.hint House of Lords
+              p The Secondary Legislation Scrutiny Committee (SLSC) of EU Exit instruments recommended changing the proposed SI from negative to affirmative procedure.
+              p #[+link('https://www.parliament.uk/business/committees/committees-a-z/lords-select/eu-select-committee-/committee-work/parliament-2017/new-items-of-scrutiny/', 'Read the SLSC of EU Exit instruments report')]
+        h3 11 April 2018
+        ul.list--block
+          li
+            .list--details
+              p
+                span.hint House of Commons
+                span.hint House of Lords
+              p Laid before the House of Commons and House of Lords
+        h3 13 April 2018
+        ul.list--block
+          li
+            .list--details
+              p
+                span.hint House of Commons
+              p Certified as England only under the English Votes for English Laws (EVEL) process.
+        h3#updateCommons 19 April 2018
+        ul.list--block
+          li
+            .list--details
+              p
+                span.hint House of Commons
+                span.hint House of Lords
+              p No concerns raised by the Joint Committee on Statutory Instruments (JCSI).
+              p #[+link('https://publications.parliament.uk/pa/jt201719/jtselect/jtstatin/121/12102.htm', 'Read the JCSI report')]
+        h3#updateLords 26 April 2018
+        ul.list--block
+          li
+            .list--details
+              p
+                span.hint House of Lords
+              p No concerns raised by the Secondary Legislation Scrutiny Committee (SLSC).
+              p #[+link('https://publications.parliament.uk/pa/ld201719/ldselect/ldsecleg/120/12002.htm', 'Read the SLSC report')]
