@@ -1,0 +1,23 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Procedures
+
+      ol.list--block
+        li
+          .list--details
+            h2 #[+link('affirmative-draft-list.html', 'Draft affirmative')]
+        li
+          .list--details
+            h2 #[+link('negative-draft-list.html', 'Draft negative')]
+        li
+          .list--details
+            h2 #[+link('affirmative-made-list.html', 'Made affirmative')]
+        li
+          .list--details
+            h2 #[+link('negative-made-list.html', 'Made negative')]
+        li
+           .list--details
+            h2 #[+link('#', 'Proposed SI')]

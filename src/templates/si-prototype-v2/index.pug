@@ -5,17 +5,31 @@ block content
     .container
       h1 SI prototypes (May 2018)
 
-      h2 Work package (thing)
+      h2 SI landing page (gateway)
 
       ul.list--bullet
-        //-li #[+link('affirmative-step.html', 'Draft Affirmative SI (procedure steps)')]
-        //-li.v2-line-break #[+link('affirmative-date.html', 'Draft Affirmative SI (business item)')]
-        li #[+link('negative-step.html', 'Made Negative SI (procedure steps)')]
-        li.v2-line-break #[+link('negative-date.html', 'Made Negative SI (business item)')]
-        li #[+link('proposed-step.html', 'Proposed SI (procedure steps)')]
-        li #[+link('proposed-date.html', 'Proposed SI (business items)')]
-
-      h2 Work packages (list)
+        li [/statutory-instruments] #[+link('gateway.html', 'SI landing page')]
+        
+      h2 Procedures (lists)
 
       ul.list--bullet
-        li #[+link('current-list.html', 'Current SI List')]
+        li [/procedures] #[+link('procedures.html', 'Procedures')]
+      
+      h2 Work packages (lists)
+
+      ul.list--bullet
+        li.v2-line-break [/work-packages] #[+link('all-work-packages-list.html', 'All work packages')]
+        li [/procedures/:procedure] #[+link('affirmative-draft-list.html', 'Draft affirmative work packages')]
+        li.v2-line-break [/procedures/:procedure] #[+link('affirmative-made-list.html', 'Made affirmative work packages')]
+        li [/procedures/:procedure] #[+link('negative-draft-list.html', 'Draft negative work packages')]
+        li [/procedures/:procedure] #[+link('negative-made-list.html', 'Made negative work packages')]
+      
+      h2 Work packages (things)
+
+      ul.list--bullet
+        //-li [/work-packages/:work-package] #[+link('affirmative-step.html', 'Draft Affirmative SI (procedure steps)')]
+        li.v2-line-break [/work-packages/:work-package] #[+link('affirmative-date.html', 'Draft Affirmative SI (business item)')]
+        li [/work-packages/:work-package] #[+link('negative-step.html', 'Made Negative SI (procedure steps)')]
+        li.v2-line-break [/work-packages/:work-package] #[+link('negative-date.html', 'Made Negative SI (business item)')]
+        li [/work-packages/:work-package] #[+link('proposed-step.html', 'Proposed SI (procedure steps)')]
+        li [/work-packages/:work-package] #[+link('proposed-date.html', 'Proposed SI (business items)')]
