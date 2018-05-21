@@ -1,0 +1,46 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Statutory instruments
+
+      h2 Waht is a Statutory instrument?
+
+      p Some relatively brief content here on what an SI is, what they can do etc. Probably don’t want to bombard people with too much information at this point, but could almost certainly link off to procedure pages or whatever.
+
+  section
+    .container
+      h2 Statutory instrument lists
+
+      ol.list--block
+        li
+          .list--details
+            h3 #[+link('#', 'All statutory instruments')]
+        li
+          .list--details
+            h3 #[+link('#', 'Draft affirmative statutory instruments')]
+        li
+          .list--details
+            h3 #[+link('#', 'Draft negative statutory instruments')]
+        li
+          .list--details
+            h3 #[+link('#', 'Made affirmative statutory instruments')]
+        li
+          .list--details
+            h3 #[+link('#', 'Made negative statutory instruments')]
+        li
+           .list--details
+            h3 #[+link('#', 'Proposed statutory instruments')]
+
+  section
+    .container
+      h2 Statutory instrument resources
+
+      ol.list--block
+        li
+          .list--details
+            h3 #[+link('#', 'Statutory instrument procedure (Guide to Procedure)')]
+        li
+          .list--details
+            h3 #[+link('#', 'Statutory instrument procedure (Parliament.uk)')]
