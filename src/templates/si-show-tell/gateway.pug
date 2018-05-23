@@ -1,0 +1,50 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Statutory instruments
+
+      h2 What is a statutory instrument?
+
+      p Some relatively brief content here on what an SI is, what they can do etc. Probably don’t want to bombard people with too much information at this point, but could almost certainly link off to procedure pages or whatever.
+
+  section
+    .container
+      h2 Statutory instrument lists
+
+      ol.list--block
+        li
+          .list--details
+            h3 #[+link('all-work-packages-list.html', 'All statutory instruments')]
+            p View all statutory instruments currently before parliamemt.
+        li
+          .list--details
+            h3 #[+link('negative-made-list.html', 'Draft affirmative statutory instruments')]
+            p View all statutory instruments subject to the draft affirmative procedure.
+        li
+          .list--details
+            h3 #[+link('negative-made-list.html', 'Draft negative statutory instruments')]
+            p View all statutory instruments subject to the draft negative procedure.
+        li
+          .list--details
+            h3 #[+link('negative-made-list.html', 'Made affirmative statutory instruments')]
+            p View all statutory instruments subject to the made affirmative procedure.
+        li
+          .list--details
+            h3 #[+link('negative-made-list.html', 'Made negative statutory instruments')]
+            p View all statutory instruments subject to the made negative procedure.
+
+  section
+    .container
+      h2 Statutory instrument guidance
+
+      ol.list--block
+        li
+          .list--details
+            h3 #[+link('https://beta.parliament.uk/collections/lA7IUL12', 'MPs Guide to Procedure')]
+            p MPs guide to procedure on delegated legislation and statutory instruments.
+        li
+          .list--details
+            h3 #[+link('https://www.parliament.uk/about/how/laws/delegated/', 'Guide to secondary legislation')]
+            p Parlaimentary guide to Secondary legislation on the parliament website.
