@@ -1,0 +1,32 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 SI resource prototypes
+
+      h2 Beta homepage (utility)
+
+      ul.list--bullet
+        li [/] #[+link('home.html', 'Homepage')]
+
+      h2 Statutory instruments page (utility)
+
+      ul.list--bullet
+        li [/statutory-instruments] #[+link('gateway.html', 'Statutory instruments gateway page')]
+
+      h2 Procedures (lists)
+
+      ul.list--bullet
+        li [/procedures] #[+link('procedures.html', 'Procedures')]
+
+      h2 Work packages (lists)
+
+      ul.list--bullet
+        li [/work-packages] #[+link('all-work-packages-list.html', 'All work packages')]
+        li [/procedures/:procedure] #[+link('negative-made-list.html', 'Made negative statutory instruments')]
+
+      h2 Work packages (things)
+
+      ul.list--bullet
+        li [/work-packages/:work-package] #[+link('negative-date.html', 'Made Negative statutory instrument (business items)')]

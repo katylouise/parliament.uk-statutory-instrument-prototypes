@@ -1,0 +1,40 @@
+extends ../../layouts/layout-beta-status.pug
+
+block content
+  #content.hero
+    .container
+      h1 UK Parliament beta website
+      p We're building a new website for Parliament. Pages with a beta label are being tested and improved. They may not work for everyone.
+      p Follow #[+link('#', 'beta progress on our blog')]
+        |.
+
+  section.section--primary
+    .container
+      h2.sr-only
+        | What's on beta.parliament.uk
+
+      ol.list--block.list--3
+        li
+          .list--details
+            h3 #[+link('#', 'MPs')]
+            p Find all members of the House of Commons.
+        li
+          .list--details
+            h3 #[+link('#', 'Lords')]
+            p View all members of the House of Lords.
+        li
+          .list--details
+            h3 #[+link('#', 'Constituencies')]
+            p Find MPs by the area they represent.
+        li
+          .list--details
+            h3 #[+link('#', 'Parties and groups')]
+            p Find MPs and Lords by their party or group.
+        li
+          .list--details
+            h3 #[+link('#', 'MPs Guide to Procedure')]
+            p Guidance on House of Commons procedure for MPs and their staff
+        li
+          .list--details
+            h3 #[+link('gateway.html', 'Statutory Instruments')]
+            p Find all resources related to statutory instruments.

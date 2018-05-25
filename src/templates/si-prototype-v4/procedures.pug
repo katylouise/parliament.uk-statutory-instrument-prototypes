@@ -1,0 +1,24 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Procedures
+
+      ol.list--block
+        li
+          .list--details
+            h2 #[+link('negative-made-list.html', 'Draft affirmative')]
+            p View all work packages subject to the draft affirmative procedure.
+        li
+          .list--details
+            h2 #[+link('negative-made-list.html', 'Draft negative')]
+            p View all work packages subject to the draft negative procedure.
+        li
+          .list--details
+            h2 #[+link('negative-made-list.html', 'Made affirmative')]
+            p View all work packages subject to the made affirmative procedure.
+        li
+          .list--details
+            h2 #[+link('negative-made-list.html', 'Made negative')]
+            p View all work packages subject to the made negative procedure.
