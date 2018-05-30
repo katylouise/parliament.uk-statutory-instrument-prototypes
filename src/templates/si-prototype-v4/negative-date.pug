@@ -137,10 +137,43 @@ block content
   section
     .container
       h2 Completed stages with no date
+      ul.list--block
+        li
+          .list--details
+            p
+              span.hint House of Commons
+              | Scheduled debate
+            p #[+link('#', 'Find out more about this stage')]
+        li
+          .list--details
+            p
+              span.hint House of Lords
+              | Scheduled debate
+            p
+              span.hint House of Lords
+              | Debate in the Chamber of the House of Lords
+        li
+          .list--details
+            p
+              span.hint House of Commons
+              | Debate in the Chamber of the House of Commons
+            p #[+link('#', 'Find out more about this stage')]
 
-      p
-        span.hint House of Commons
-        | Scheduled debate
-      p
-        span.hint House of Lords
-        | Scheduled debate
+  section
+    .container
+      h2 Scheduled upcoming stages
+
+      ol.list--block.list--2
+        li.v1-accent--list
+          .list--details
+            h3 10 May 2018
+            p
+              span.hint House of Commons
+              | Scheduled debate
+        li.v1-accent--list
+          .list--details
+            h3 12 May 2018
+            p
+              span.hint House of Lords
+              | Scheduled debate
+            p #[+link('#', 'Find out more about this stage')]

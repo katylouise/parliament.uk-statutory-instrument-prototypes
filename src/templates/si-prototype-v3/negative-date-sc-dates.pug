@@ -3,7 +3,7 @@ extends ../../layouts/layout-beta.pug
 block content
   #content.section--primary
     .container
-      h1 The Harbours, Highways, Merchant Shipping and Other Transport (Environmental Protection) (EU Exit) Regulations 2018
+      h1 The Harbours, Highways, Merchant Shipping and Other Transport (Environmental Protection) (EU Exit) Regulations 2018 (SI 2018/568)
       ul
         li This is a made negative work package
         li #[+link('negative-made-list.html', 'View all made negative work packages')]
@@ -129,28 +129,43 @@ block content
   section
     .container
       h2 Completed stages with no date
-
-      p
-        span.hint House of Commons
-        | Scheduled debate
-      p
-        span.hint House of Lords
-        | Scheduled debate
+      ul.list--block
+        li
+          .list--details
+            p
+              span.hint House of Commons
+              | Scheduled debate
+            p #[+link('#', 'Find out more about this stage')]
+        li
+          .list--details
+            p
+              span.hint House of Lords
+              | Scheduled debate
+            p
+              span.hint House of Lords
+              | Debate in the Chamber of the House of Lords
+        li
+          .list--details
+            p
+              span.hint House of Commons
+              | Debate in the Chamber of the House of Commons
+            p #[+link('#', 'Find out more about this stage')]
 
   section
     .container
       h2 Scheduled upcoming stages
 
-      ul.list--block
-        li.v1-accent--list
+      ol.list--block.list--2
+        li
           .list--details
             h3 10 May 2018
             p
               span.hint House of Commons
               | Scheduled debate
-        li.v1-accent--list
+        li
           .list--details
             h3 12 May 2018
             p
               span.hint House of Lords
               | Scheduled debate
+            p #[+link('#', 'Find out more about this stage')]
