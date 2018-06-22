@@ -1046,7 +1046,7 @@
 
 .step-9-3:before {
   @extend .step-connector;
-  @include step_connector(1.375em, 0, 85.=5em, 78.4%);
+  @include step_connector(1.375em, 0, 85.5em, 78.4%);
   border-left: 3px solid $grey-3;
 }
 
