@@ -1,26 +1,26 @@
 function pdsGovSiToggle() {
 
   // Local variables
-  var dropdown_toggle = document.getElementsByClassName('js-collapsible__title');
-  var dropdown_parent;
-  var toggle = function(e) {
+  var dropdownToggle = document.getElementsByClassName('js-collapsible__title');
+  var dropdownParent;
+  var toggle = function (e) {
       e.preventDefault();
 
       // Get parent of dropdown
-      dropdown_parent = this.parentElement;
-      dropdown_content = dropdown_parent.querySelector('.js-collapsible-content');
+      dropdownParent = this.parentElement;
+      dropdownContent = dropdownParent.querySelector('.js-collapsible-content');
 
       // Check dropdown content
-      if (dropdown_content.classList.contains('hidden')) {
-        dropdown_content.classList.remove('hidden');
+      if (dropdownContent.classList.contains('hidden')) {
+        dropdownContent.classList.remove('hidden');
       } else {
-        dropdown_content.classList.add('hidden');
+        dropdownContent.classList.add('hidden');
       }
     };
 
   // Add listener to dropdowns
-  for (var x = 0; x < dropdown_toggle.length; x++) {
-    dropdown_toggle[x].addEventListener('click', toggle, false);
+  for (var x = 0; x < dropdownToggle.length; x++) {
+    dropdownToggle[x].addEventListener('click', toggle, false);
   }
 }
 

@@ -62,6 +62,7 @@ images:
 
 # Optimises SVGs
 icons:
+	@mkdir -p $(PUBLIC_FOLDER)/icons
 	@$(SVGO) -f $(PUGIN)/$(SRC_FOLDER)/icons -o $(PUBLIC_FOLDER)/icons
 
 # Outputs pug files to html within public folder
