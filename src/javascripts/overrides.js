@@ -1,3 +1,4 @@
+// Hide & show funcitonality for 2016 prototype
 function pdsGovSiToggle() {
 
   // Local variables
