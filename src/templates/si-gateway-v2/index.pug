@@ -1,0 +1,181 @@
+extends ../../layouts/layout-beta.pug
+
+block content
+  #content.section--primary
+    .container
+      h1 Find a statutory instrument
+
+      p Find all statutory instruments (SIs) and follow their progress.
+
+      p #[+link('#', 'View all current statutory instruments')].
+      p
+        small.message--error /work-packages/paper-types/statutory-instruments/current
+
+  section
+    .container
+      aside.dropdown(data-toggle='item')
+        +button('Find by department or body', 'btn--ghost--inverse btn--toggle')(data-toggle='parent-item')
+        .dropdown__details(data-toggle='content')
+          +link('#', 'Close')(class='btn--close', data-toggle='parent-item')
+          h2 Department or body
+          ol
+            li #[+link('#', 'Attorney General\'s Office')]
+            li #[+link('#', 'Cabinet Office')]
+            li #[+link('#', 'Department for Business, Energy and Industrial Strategy')]
+            li #[+link('#', 'Department for Business, Innovation and Skills')]
+            li #[+link('#', 'Department for Digital, Culture, Media and Sport')]
+            li #[+link('#', 'Department for Education')]
+            li #[+link('#', 'Department for Environment, Food and Rural Affairs')]
+            li #[+link('#', 'Department for Exiting the European Union')]
+            li #[+link('#', 'Department for International Development')]
+            li #[+link('#', 'Department for International Trade')]
+            li #[+link('#', 'Department for Transport')]
+            li #[+link('#', 'Department for Work and Pensions')]
+            li #[+link('#', 'Department for Health and Social Care')]
+            li #[+link('#', 'Duchy of Lancaster Office')]
+            li #[+link('#', 'Foreign and Commonwealth Office')]
+            li #[+link('#', 'HM Revenue and Customs')]
+            li #[+link('#', 'HM Treasury')]
+            li #[+link('#', 'Home Office')]
+            li #[+link('#', 'Local Government Boundary Commission for England')]
+            li #[+link('#', 'Ministry of Defence')]
+            li #[+link('#', 'Ministry of Housing, Communities and Local Government')]
+            li #[+link('#', 'Ministry of Justice')]
+            li #[+link('#', 'Northern Ireland Office')]
+            li #[+link('#', 'Privy Council Office')]
+            li #[+link('#', 'Scotland Office')]
+            li #[+link('#', 'Wales Office')]
+
+  section
+    .container
+      h2 Proposed negative SIs
+      p Find all proposed negative SIs that are waiting for a committee recommendation.
+      p
+        small.message--error /work-packages/paper-types/proposed-negative-statutory-instruments/current
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'Proposed negative statutory instruments')]
+
+  section
+    .container
+      h2 Procedure stages
+      p Find SIs by a stage in procedure.
+      p
+        small.message--error /procedure-steps/:procedure_step_id/work-packages/current
+
+      h3 Objection tabled
+      p Find SIs that have had a motion (prayer) tabled against them. If agreed to within the objection period, the SI will stop being law.
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              small House of Commons
+              h4 #[+link('#', 'Motion (prayer) to stop the instrument being law tabled')]
+        li
+          .card
+            .card--details
+              small House of Lords
+              h4 #[+link('#', 'Motion (prayer) to stop the instrument being law tabled')]
+
+      h3 Recommended for a change in procedure
+      p Find proposed negative SIs that a committee has recommended should follow a different procedure.
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              small House of Commons
+              h4 #[+link('#', 'The European Statutory Instruments Committee (ESIC) recommended that the instrument should follow the affirmative procedure')]
+        li
+          .card
+            .card--details
+              small House of Lords
+              h4 #[+link('#', 'The Secondary Legislation Scrutiny Committee (SLSC) recommended that the instrument should follow the affirmative procedure')]
+
+      h3 Committee concerns raised
+      p Find SIs that a committee has concerns with.
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              small House of Commons and House of Lords
+              h4 #[+link('#', 'Concerns raised by the Joint Committee on Statutory Instruments (JCSI)')]
+        li
+          .card
+            .card--details
+              small House of Lords
+              h4 #[+link('#', 'Concerns raised by the Secondary Legislation Scrutiny Committee (SLSC)')]
+
+      h3 Scheduled for a debate
+      p Find SIs that are scheduled for a Chamber or committee debate.
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              small House of Commons
+              h4 #[+link('#', 'Scheduled for a Chamber debate')]
+        li
+          .card
+            .card--details
+              small House of Lords
+              h4 #[+link('#', 'Scheduled for a Chamber debate')]
+        li
+          .card
+            .card--details
+              small House of Commons
+              h4 #[+link('#', 'Scheduled for a Delegated Legislation Committee (DLC) debate')]
+        li
+          .card
+            .card--details
+              small House of Lords
+              h4 #[+link('#', 'Scheduled for a Grand Committee debate')]
+
+  section
+    .container
+      h2 Procedures
+      p Find SIs by the procedure they follow.
+      p
+        small.message--error /procedures/:procedure/work-packages/current
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'Draft affirmative statutory instruments')]
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'Draft negative statutory instruments')]
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'Made affirmative statutory instruments')]
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'Made negative statutory instruments')]
+
+  section
+    .container
+      h2 All SIs and proposed negative SIs
+      p View all current and past SIs and proposed negative SIs.
+      p
+        small.message--error work-packages/paper-types/statutory-instruments
+      p
+        small.message--error work-packages/paper-types/proposed-negative-statutory-instruments
+
+      ol.list--pipe
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'All statutory instruments')]
+        li
+          .card
+            .card--details
+              h3 #[+link('#', 'All proposed negative statutory instruments')]
